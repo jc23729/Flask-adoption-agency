@@ -71,7 +71,7 @@ This should be a POST request to the URL path /add."""
         # re-present form for editing
         return render_template("pet_add_form.html", form=form)
 
-
+##Step 6: Add Display/Edit Form
 @app.route("/<int:pet_id>", methods=["GET", "POST"])
 def edit_pet(pet_id):
     """Edit pet."""
