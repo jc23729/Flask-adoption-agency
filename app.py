@@ -45,11 +45,18 @@ def list_pets():
 """Create route for Step 3
 Add Pet Form This should be at the URL path /add so we created the @app.route("/add", methods=["GET", "POST"])
 . Add a link to this from the homepage."""
+
 @app.route("/add", methods=["GET", "POST"])
 def add_pet():
     """Add a pet."""
 
     form = AddPetForm()
+    """Step 4: Create Handler for Add Pet Form
+This should validate the form:
+
+if it doesn’t validate, it should re-render the form
+if it does validate, it should create the new pet, and redirect to the homepage
+This should be a POST request to the URL path /add."""
 
     if form.validate_on_submit():
         data = {k: v for k, v in form.data.items() if k != "csrf_token"}
