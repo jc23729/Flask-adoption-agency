@@ -33,7 +33,7 @@ name
 show photo, if present
 display “Available” in bold if the pet is available for adoption"""
 
-
+##Step 2Step 2: Make Homepage Listing Pets, html linked to pet_list.html
 @app.route("/")
 def list_pets():
     """List all pets."""
