@@ -17,7 +17,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 GENERIC_IMAGE = "https://www.google.com/search?q=dog+gifs&sxsrf=ALeKk01K6VzP7WC2tgnFIqrXR0NsqHitFA:1612544479656&tbm=isch&source=iu&ictx=1&fir=e8s4N24_h9yrHM%252Cr_3HjVfs1CXquM%252C_&vet=1&usg=AI4_-kQGhMTG2qGx1UcJhS4Iby7pU_bsFg&sa=X&ved=2ahUKEwiTupOnnNPuAhXKVzABHW5GBa8Q9QF6BAgMEAE#imgrc=e8s4N24_h9yrHM"
 db = SQLAlchemy()
-
+#Step 1: Create Database & Model
 class Pet(db.Model):
     """Adoptable pet"""
     __tablename__ = "pets"
